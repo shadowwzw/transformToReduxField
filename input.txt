@@ -1,0 +1,18 @@
+<Field label="Поле один" type={Field.Type.VERTICAL}>
+    <TextBox disabled={viewMode}
+      placeholder="Введите значение"
+    />
+</Field>
+
+<Field label="Поле два" type={Field.Type.VERTICAL}>
+    <TextBox disabled={viewMode}
+        button={TextBox.Icon.DIRECTORY}
+        placeholder="Открытие словаря"
+    />
+</Field>
+
+<Field label="Поле три" type={Field.Type.VERTICAL}>
+    <SelectBox disabled={viewMode}
+        options={type3}
+    />
+</Field>
