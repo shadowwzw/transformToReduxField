@@ -1,6 +1,7 @@
 const fs = require('fs')
-const compNames = ["TextBox", "SelectBox"]
+const compNames = ["TextBox", "SelectBox", "DateBox"]
 const file = fs.readFileSync('./input.txt') + ""
+console.log("Wait...")
 const result = compNames.reduce( (accumulator, currentValue) => {
   const file2 = accumulator.replace(/(<Field)( [ \S\n]*?label[ \S\n]*?>)([ \S\n]*?)(<[ \S\n]*?\/Field)(>)/gu, "$1UI $2 $4UI$5")
   let file3 = file2.replace(new RegExp(`<(${currentValue})([ \\S\\n]*?)\\/>`, "gu"), `<Field component=\{${currentValue}\} props={{$2}}/>`)
@@ -11,3 +12,4 @@ const result = compNames.reduce( (accumulator, currentValue) => {
 }, file)
 
 fs.writeFileSync("./output.txt", result)
+console.log("Complete!")
