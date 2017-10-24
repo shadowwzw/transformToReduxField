@@ -1,6 +1,8 @@
 <Field label="Поле один" type={Field.Type.VERTICAL}>
     <TextBox disabled={viewMode}
       placeholder="Введите значение"
+      array={[1, 2, 3]}
+      value={(10)}
     />
 </Field>
 

@@ -1,15 +1,20 @@
-<FieldUI  label="Поле один" type={Field.Type.VERTICAL}> <Field component={TextBox} props={{
+<FieldUI  label="Поле один" type={Field.Type.VERTICAL}> 
+<Field component={TextBox} props={{
       disabled: viewMode,  
-      placeholder: "Введите значение", }}/>
+      placeholder: 'Введите значение',  
+      array: [1, 2, 3],  
+      value: (10) }}/>
 </FieldUI>
 
-<FieldUI  label="Поле два" type={Field.Type.VERTICAL}> <Field component={TextBox} props={{
+<FieldUI  label="Поле два" type={Field.Type.VERTICAL}> 
+<Field component={TextBox} props={{
       disabled: viewMode,  
         button: TextBox.Icon.DIRECTORY,  
-        placeholder: "Открытие словаря", }}/>
+        placeholder: 'Открытие словаря' }}/>
 </FieldUI>
 
-<FieldUI  label="Поле три" type={Field.Type.VERTICAL}> <Field component={SelectBox} props={{
+<FieldUI  label="Поле три" type={Field.Type.VERTICAL}> 
+<Field component={SelectBox} props={{
       disabled: viewMode,  
-        options: type3, }}/>
+        options: type3 }}/>
 </FieldUI>
