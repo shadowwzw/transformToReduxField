@@ -1,3 +1,15 @@
+<Field label="Физическая охрана пожарная безопасность" type={Field.Type.VERTICAL}>
+    <SelectBox disabled={viewMode}
+      placeholder="Введите значение"
+      array={[1, 2, 3]}
+      value={(10)}
+    />
+</Field>
+
+<div className='pledge-form__checkbox'>
+	<CheckBox disabled={viewMode}>Первичный осмотр</CheckBox>
+</div>
+
 <Field label="Поле один" type={Field.Type.VERTICAL}>
     <TextBox disabled={viewMode}
       placeholder="Введите значение"
