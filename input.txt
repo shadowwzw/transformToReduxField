@@ -1,4 +1,4 @@
-<Field label="Физическая охрана пожарная безопасность" type={Field.Type.VERTICAL}>
+<Field label="поле ноль" type={Field.Type.VERTICAL}>
     <SelectBox disabled={viewMode}
       placeholder="Введите значение"
       array={[1, 2, 3]}
@@ -6,7 +6,7 @@
     />
 </Field>
 
-<div className='pledge-form__checkbox'>
+<div className='checkbox1'>
 	<CheckBox disabled={viewMode}>Первичный осмотр</CheckBox>
 </div>
 
