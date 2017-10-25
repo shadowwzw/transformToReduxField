@@ -1,4 +1,4 @@
-<FieldUI  label="Физическая охрана пожарная безопасность" type={Field.Type.VERTICAL}> 
+<FieldUI  label="поле ноль" type={Field.Type.VERTICAL}> 
 <Field component={SelectBox} props={{
       disabled: viewMode,  
       placeholder: 'Введите значение',  
@@ -6,7 +6,7 @@
       value: (10) }}/>
 </FieldUI>
 
-<div className='pledge-form__checkbox'>
+<div className='checkbox1'>
 	<Field component={CheckBox} props={{  disabled: viewMode }}>Первичный осмотр</Field>
 </div>
 
